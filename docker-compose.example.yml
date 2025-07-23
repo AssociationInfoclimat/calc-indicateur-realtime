@@ -1,0 +1,10 @@
+services:
+  calc_indicateur_realtime:
+    build: .
+    container_name: calc_indicateur_realtime
+    volumes:
+      - ./data:/media/datastore
+    environment:
+      DB_HOST: 127.0.0.1
+      DB_USER: user
+      DB_PASSWORD: password

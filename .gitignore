@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+
+docker-compose.*
+!docker-compose.example.yml
+
+data/
+data-samples/
