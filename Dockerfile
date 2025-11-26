@@ -26,4 +26,4 @@ COPY ./pyproject.toml /app/pyproject.toml
 RUN poetry config virtualenvs.in-project true \
     && poetry install --no-interaction --no-ansi --only main
 
-CMD ["sleep", "infinity"]
+CMD ["php", "/app/src/main.php"]
